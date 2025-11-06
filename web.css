@@ -1,1 +1,65 @@
+/* ANIMATIONS */
 
+@keyframes dissolve {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/************************************************************/
+
+/* ELEMENTS */
+
+body {
+    background-color: rgb(46, 46, 46);
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: hsl(0, 0%, 62%);
+}
+table {
+    font-size: larger;
+    width: 75vw;
+    height: 25vh;
+}
+td {
+    border: 1px solid black;
+    border-collapse: separate;
+    width: 33.33%;
+    height: 33.33%;
+    align-content: center;
+}
+ a {
+        text-decoration: none; /* Removes the underline */
+        color: hsl(0, 0%, 62%); /* Sets a desired color for all link states */
+    }
+
+/************************************************************/
+
+/* IDENTIFIERS */
+
+#welcome_msg {
+    text-align: center;
+    font-size: 5vw;
+    color: hsl(0, 0%, 100%);
+    animation-name: dissolve;
+    animation-duration: 5s;
+}
+
+#description {
+    text-align: center;
+    font-size: 2.5vw;
+    color: hsl(0, 0%, 73%);
+    animation-name: dissolve;
+    animation-duration:7.5s;
+}
+
+/************************************************************/
+
+/* CLASSES */
+
+
+
+/************************************************************/
