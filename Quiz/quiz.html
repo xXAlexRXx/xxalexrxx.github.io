@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="quiz.js"></script>
+</head>
+<body>
+    <div id="welcome">
+        <h1>Welcome to The Alex Quiz</h1>
+        <h2>A quiz by Alex Roedel</h2>
+        <button id="startBtn">Start Quiz</button>
+    </div>
+        <div id="questionArea" hidden>
+        <h1 id="quizQuestion"></h1>
+        <div id="answerArea">
+            <form autocomplete="off">
+                <div class="answer-row">
+                    <input type="radio" name="answer" id="answerOne" value="0" required>
+                    <label for="answerOne"></label>
+                </div>
+
+                <div class="answer-row">
+                    <input type="radio" name="answer" id="answerTwo" value="1" required>
+                    <label for="answerTwo"></label>
+                </div>
+
+                <div class="answer-row">
+                    <input type="radio" name="answer" id="answerThree" value="2" required>
+                    <label for="answerThree"></label>
+                </div>
+
+                <div class="answer-row">
+                    <input type="radio" name="answer" id="answerFour" value="3" required>
+                    <label for="answerFour"></label>
+                </div>
+
+                <h2 id="answerBox" hidden></h2>
+
+                <input type="button" value="Submit" id="submitBtn">
+                <input type="button" value="Next Question" id="nextQuestionBtn" hidden>
+                <input type="button" value="Restart Quiz" id="restartQuizBtn" hidden>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

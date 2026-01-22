@@ -1,0 +1,101 @@
+/**************** Elements ****************/
+
+body {
+    background-color: hsl(0, 0%, 96%);
+    font-family: 'Times New Roman', Times, serif;
+    color: hsl(0, 0%, 20%);
+    margin: 20px;
+    padding: 0;
+    line-height: 1.6;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+}
+
+h1, h2 {
+    margin: 10px 0;
+}
+
+/*****************************************/
+
+/**************** Classes ****************/
+
+.row {
+    display: flex;
+    margin: 0;
+}
+
+.cell {
+    width: 125px;
+    height: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    font-weight: bold;
+    background-color: hsl(0, 0%, 99%);
+    cursor: pointer;
+    border: 2px solid hsl(0, 0%, 48%);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.cell:hover {
+    background-color: hsl(51, 100%, 66%);
+}
+
+#row1 .cell {
+    border-top: none;
+}
+
+.row .cell:first-child {
+    border-left: none;
+}
+
+.row > .cell:last-child {
+    border-right: none;
+}
+
+#row3 .cell {
+    border-bottom: none;
+}
+
+.winner {
+    background-color: hsl(51, 100%, 50%);
+    color: hsl(0, 0%, 0%);
+    box-shadow: 0 0 10px hsl(51, 100%, 50%);
+}
+
+/*****************************************/
+
+/************** Identifiers **************/
+
+#gameBoard {
+    display: inline-block;
+}
+
+#result {
+    margin-top: 20px;
+    min-height: 1.5em;
+}
+
+#reset {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: hsl(0, 0%, 85%);
+    cursor: pointer;
+}
+
+#reset:hover {
+    background-color: hsl(0, 0%, 28%);
+    color: hsl(0, 0%, 100%);
+}
+
+/*****************************************/

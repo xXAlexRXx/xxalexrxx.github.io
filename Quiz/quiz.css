@@ -1,0 +1,70 @@
+/**************** Elements ****************/
+
+body {
+    background-color: hsl(0, 0%, 38%);
+    font-family: 'Times New Roman', Times, serif;
+    color: hsl(0, 0%, 100%);
+    margin: 20px;
+    padding: 0;
+    line-height: 1.6;
+}
+
+form {
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 20px;
+    background-color: hsla(0, 0%, 100%, 0.05);
+    border-radius: 10px;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+    accent-color: hsl(72, 100%, 86%);
+}
+
+label {
+    cursor: pointer;
+    margin-right: 20px;
+    font-size: 1.5em;
+}
+
+input[type="radio"]:hover, label:hover {
+    color: hsl(72, 100%, 86%);
+}
+
+/*****************************************/
+
+/**************** Classes ****************/
+
+.answer-row {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+/*****************************************/
+
+/************** Identifiers **************/
+
+#welcome {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#submitBtn, #startBtn, #nextQuestionBtn, #restartQuizBtn {
+    background-color: hsl(0, 0%, 85%);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+#submitBtn:hover, #startBtn:hover, #nextQuestionBtn:hover, #restartQuizBtn:hover {
+    background-color: hsl(0, 0%, 28%);
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+/*****************************************/
